@@ -1,0 +1,24 @@
+{
+  "name": "assignment5",
+  "version": "1.0.0",
+  "description": "CSS554 Assignment 5 - Understanding Redis",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Ravi Patel",
+    "email": "rpate69@Stevens.edu",
+    "CWID": "10432313"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "flat": "^4.1.0",
+    "node-redis": "^0.1.7",
+    "redis": "^2.8.0"
+  }
+}
