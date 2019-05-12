@@ -1002,14 +1002,16 @@ const people = [
 ]
 
 const exportMethods = {
-    returnPeopleData(){
-        return people
-    },
-    returnPersonById(id){
-        people.forEach(person => {
-            if(person["id"] === id){
-                return person
-            }
+    getById(id){
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                people.forEach((person)=>{
+                    if(person.id === id){
+                        resolve(person)
+                    }
+                }
+                )
+            }, 5000)
         })
     }
 }
